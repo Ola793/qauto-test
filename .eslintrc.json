@@ -1,0 +1,25 @@
+{
+    "plugins": [
+      "cypress"
+    ],
+    "rules": {
+        "cypress/no-assigning-return-values": "warn",
+        "cypress/no-unnecessary-waiting": "error",
+        "cypress/assertion-before-screenshot": "warn",
+        "cypress/no-force": "warn",
+        "cypress/no-async-tests": "error",
+        "cypress/no-pause": "error",
+        "prettier/prettier": "warn"
+    },
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 6
+    },
+    "env": {
+        "cypress/globals": true
+    },
+    "extends": [
+        "plugin:cypress/recommended",
+        "plugin:prettier/recommended"
+    ]
+}
