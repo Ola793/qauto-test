@@ -3,7 +3,7 @@
 describe("Change photo test", () => {
   const authData = `${Cypress.env("authName")}:${Cypress.env("authPass")}`;
 
-  it.only("photo change", () => {
+  it("photo change", () => {
     cy.log("photo change");
     cy.visit(`https://${authData}@qauto.forstudy.space/`);
     cy.request("POST", "https://qauto.forstudy.space/api/auth/signin", {

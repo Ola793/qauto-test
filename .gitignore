@@ -10,3 +10,9 @@ cypress/screenshots/
 # Reports
 /mochawesome-report
 /mochawesome.json
+
+# Config
+/.editorconfig
+
+# Sensitive
+/cypress.env.json
