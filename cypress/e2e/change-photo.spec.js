@@ -20,14 +20,14 @@
 // });
 
 describe("Change photo test", () => {
-  const authData = `${CYPRESS_siteAuthUserName}:${CYPRESS_siteAuthPassword}`;
+  const authData = `${CYPRESS_authName}:${CYPRESS_authPass}`;
 
   it("photo change", () => {
     cy.log("photo change");
     cy.visit(`https://${authData}@qauto.forstudy.space/`);
     cy.request("POST", "https://qauto.forstudy.space/api/auth/signin", {
-      email: CYPRESS_user,
-      password: CYPRESS_password,
+      email: CYPRESS_loginEmail,
+      password: CYPRESS_loginPass,
       remember: false,
     });
 
