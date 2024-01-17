@@ -1,0 +1,8 @@
+name: Hillel Auto e2e tests
+on: workflow_dispatch
+
+env:
+  CYPRESS_authName: ${{secrets.CYPRESS_AUTH_NAME}}
+  CYPRESS_authPass: ${{secrets.CYPRESS_AUTH_PASS}}
+  CYPRESS_loginEmail: ${{secrets.CYPRESS_LOGIN_EMAIL}}
+  CYPRESS_loginPass: ${{secrets.CYPRESS_LOGIN_PASS}}
